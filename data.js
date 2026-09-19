@@ -28,6 +28,10 @@ window.BOOK = {
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L1P17CW.wav"
       }
      ],
+     "images": [
+      "pages/u1/p018.jpg",
+      "pages/u1/p019.jpg"
+     ],
      "lines": [
       {
        "who": "باسم",
@@ -75,6 +79,9 @@ window.BOOK = {
      "title": "نشاط الاستيعاب",
      "pages": [
       20
+     ],
+     "images": [
+      "pages/u1/p020a.jpg"
      ]
     },
     {
@@ -82,13 +89,19 @@ window.BOOK = {
      "pages": [
       20
      ],
-     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+     "images": [
+      "pages/u1/p020b.jpg"
+     ]
     },
     {
      "title": "العناصر اللغوية: الألفاظ والتعبيرات",
      "pages": [
       21,
       22
+     ],
+     "images": [
+      "pages/u1/p021.jpg",
+      "pages/u1/p022.jpg"
      ]
     },
     {
@@ -101,6 +114,9 @@ window.BOOK = {
        "label": "صفحة 23 · تمرين 7",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L1P21E1_7.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p023.jpg"
      ]
     },
     {
@@ -118,6 +134,10 @@ window.BOOK = {
        "label": "صفحة 25 · تمرين 13",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L1P23E1_13.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p024.jpg",
+      "pages/u1/p025.jpg"
      ]
     },
     {
@@ -130,12 +150,18 @@ window.BOOK = {
        "label": "صفحة 26 · تمرين 14",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L1P24E1_14.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p026.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       27
+     ],
+     "images": [
+      "pages/u1/p027.jpg"
      ]
     },
     {
@@ -143,6 +169,10 @@ window.BOOK = {
      "pages": [
       28,
       29
+     ],
+     "images": [
+      "pages/u1/p028.jpg",
+      "pages/u1/p029.jpg"
      ]
     }
    ]
@@ -168,10 +198,23 @@ window.BOOK = {
        "label": "صفحة 31 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P29CW.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p030.jpg",
+      "pages/u1/p031.jpg"
      ]
     },
     {
      "title": "نشاط الاستيعاب",
+     "pages": [
+      32
+     ],
+     "images": [
+      "pages/u1/p032a.jpg"
+     ]
+    },
+    {
+     "title": "الأنشطة التواصلية",
      "pages": [
       32
      ],
@@ -180,14 +223,10 @@ window.BOOK = {
        "label": "صفحة 32 · تمرين 22",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P30E1_22.wav"
       }
-     ]
-    },
-    {
-     "title": "الأنشطة التواصلية",
-     "pages": [
-      32
      ],
-     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+     "images": [
+      "pages/u1/p032b.jpg"
+     ]
     },
     {
      "title": "العناصر اللغوية: الألفاظ والتعبيرات",
@@ -201,6 +240,11 @@ window.BOOK = {
        "label": "صفحة 35 · تمرين 28 (1)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P33E1_28_1.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p033.jpg",
+      "pages/u1/p034.jpg",
+      "pages/u1/p035.jpg"
      ]
     },
     {
@@ -214,6 +258,10 @@ window.BOOK = {
        "label": "صفحة 36 · تمرين 29",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P34E1_29.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p036.jpg",
+      "pages/u1/p037.jpg"
      ]
     },
     {
@@ -231,6 +279,10 @@ window.BOOK = {
        "label": "صفحة 39 · تمرين 37",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P37E1_37.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p038.jpg",
+      "pages/u1/p039.jpg"
      ]
     },
     {
@@ -243,12 +295,18 @@ window.BOOK = {
        "label": "صفحة 40 · تمرين 38",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P38E1_38.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p040.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       41
+     ],
+     "images": [
+      "pages/u1/p041.jpg"
      ]
     },
     {
@@ -256,6 +314,10 @@ window.BOOK = {
      "pages": [
       42,
       43
+     ],
+     "images": [
+      "pages/u1/p042.jpg",
+      "pages/u1/p043.jpg"
      ]
     }
    ]
@@ -290,10 +352,24 @@ window.BOOK = {
        "label": "صفحة 46 · الحوار B",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P44CW_B.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p044.jpg",
+      "pages/u1/p045.jpg",
+      "pages/u1/p046.jpg"
      ]
     },
     {
      "title": "نشاط الاستيعاب",
+     "pages": [
+      47
+     ],
+     "images": [
+      "pages/u1/p047a.jpg"
+     ]
+    },
+    {
+     "title": "الأنشطة التواصلية",
      "pages": [
       47
      ],
@@ -302,14 +378,10 @@ window.BOOK = {
        "label": "صفحة 47 · تمرين 46",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P45E1_46.wav"
       }
-     ]
-    },
-    {
-     "title": "الأنشطة التواصلية",
-     "pages": [
-      47
      ],
-     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+     "images": [
+      "pages/u1/p047b.jpg"
+     ]
     },
     {
      "title": "العناصر اللغوية: الألفاظ والتعبيرات",
@@ -328,6 +400,12 @@ window.BOOK = {
        "label": "صفحة 51 · تمرين 53 (2)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P49E1_53_2.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p048.jpg",
+      "pages/u1/p049.jpg",
+      "pages/u1/p050.jpg",
+      "pages/u1/p051.jpg"
      ]
     },
     {
@@ -341,6 +419,10 @@ window.BOOK = {
        "label": "صفحة 52 · تمرين 54",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P50E1_54.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p052.jpg",
+      "pages/u1/p053.jpg"
      ]
     },
     {
@@ -358,6 +440,10 @@ window.BOOK = {
        "label": "صفحة 55 · تمرين 61",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P53E1_61.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p054.jpg",
+      "pages/u1/p055.jpg"
      ]
     },
     {
@@ -370,12 +456,18 @@ window.BOOK = {
        "label": "صفحة 56 · تمرين 63",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P54E1_63.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p056.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       57
+     ],
+     "images": [
+      "pages/u1/p057.jpg"
      ]
     },
     {
@@ -383,6 +475,10 @@ window.BOOK = {
      "pages": [
       58,
       59
+     ],
+     "images": [
+      "pages/u1/p058.jpg",
+      "pages/u1/p059.jpg"
      ]
     }
    ]
@@ -408,12 +504,19 @@ window.BOOK = {
        "label": "صفحة 61 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L4P59CW.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p060.jpg",
+      "pages/u1/p061.jpg"
      ]
     },
     {
      "title": "نشاط الاستيعاب",
      "pages": [
       62
+     ],
+     "images": [
+      "pages/u1/p062a.jpg"
      ]
     },
     {
@@ -421,13 +524,19 @@ window.BOOK = {
      "pages": [
       62
      ],
-     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+     "images": [
+      "pages/u1/p062b.jpg"
+     ]
     },
     {
      "title": "العناصر اللغوية: الألفاظ والتعبيرات",
      "pages": [
       63,
       64
+     ],
+     "images": [
+      "pages/u1/p063.jpg",
+      "pages/u1/p064.jpg"
      ]
     },
     {
@@ -441,6 +550,10 @@ window.BOOK = {
        "label": "صفحة 65 · تمرين 77",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L4P63E1_77.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p065.jpg",
+      "pages/u1/p066.jpg"
      ]
     },
     {
@@ -458,6 +571,10 @@ window.BOOK = {
        "label": "صفحة 68 · تمرين 85",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L4P66E1_85.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p067.jpg",
+      "pages/u1/p068.jpg"
      ]
     },
     {
@@ -470,12 +587,18 @@ window.BOOK = {
        "label": "صفحة 69 · تمرين 86",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L4P67E1_86.wav"
       }
+     ],
+     "images": [
+      "pages/u1/p069.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       70
+     ],
+     "images": [
+      "pages/u1/p070.jpg"
      ]
     },
     {
@@ -483,6 +606,10 @@ window.BOOK = {
      "pages": [
       71,
       72
+     ],
+     "images": [
+      "pages/u1/p071.jpg",
+      "pages/u1/p072.jpg"
      ]
     }
    ]
@@ -498,6 +625,12 @@ window.BOOK = {
       74,
       75,
       76
+     ],
+     "images": [
+      "pages/u1/p073.jpg",
+      "pages/u1/p074.jpg",
+      "pages/u1/p075.jpg",
+      "pages/u1/p076.jpg"
      ],
      "audio": [
       {
@@ -529,12 +662,19 @@ window.BOOK = {
        "label": "صفحة 79 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P77CW.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p078.jpg",
+      "pages/u2/p079.jpg"
      ]
     },
     {
      "title": "نشاط الاستيعاب",
      "pages": [
       80
+     ],
+     "images": [
+      "pages/u2/p080a.jpg"
      ]
     },
     {
@@ -542,7 +682,9 @@ window.BOOK = {
      "pages": [
       80
      ],
-     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+     "images": [
+      "pages/u2/p080b.jpg"
+     ]
     },
     {
      "title": "العناصر اللغوية: الألفاظ والتعبيرات",
@@ -561,6 +703,12 @@ window.BOOK = {
        "label": "صفحة 84 · تمرين 8 (3)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P82E2_8_3.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p081.jpg",
+      "pages/u2/p082.jpg",
+      "pages/u2/p083.jpg",
+      "pages/u2/p084.jpg"
      ]
     },
     {
@@ -574,6 +722,10 @@ window.BOOK = {
        "label": "صفحة 85 · تمرين 9",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P83E2_9.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p085.jpg",
+      "pages/u2/p086.jpg"
      ]
     },
     {
@@ -591,6 +743,10 @@ window.BOOK = {
        "label": "صفحة 88 · تمرين 17",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P86E2_17.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p087.jpg",
+      "pages/u2/p088.jpg"
      ]
     },
     {
@@ -603,12 +759,18 @@ window.BOOK = {
        "label": "صفحة 89 · تمرين 18",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P87E2_18.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p089.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       90
+     ],
+     "images": [
+      "pages/u2/p090.jpg"
      ]
     },
     {
@@ -616,6 +778,10 @@ window.BOOK = {
      "pages": [
       91,
       92
+     ],
+     "images": [
+      "pages/u2/p091.jpg",
+      "pages/u2/p092.jpg"
      ]
     }
    ]
@@ -635,12 +801,19 @@ window.BOOK = {
        "label": "صفحة 94 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P92CW.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p093.jpg",
+      "pages/u2/p094.jpg"
      ]
     },
     {
      "title": "نشاط الاستيعاب",
      "pages": [
       95
+     ],
+     "images": [
+      "pages/u2/p095a.jpg"
      ]
     },
     {
@@ -648,6 +821,10 @@ window.BOOK = {
      "pages": [
       95,
       96
+     ],
+     "images": [
+      "pages/u2/p095b.jpg",
+      "pages/u2/p096.jpg"
      ]
     },
     {
@@ -662,6 +839,11 @@ window.BOOK = {
        "label": "صفحة 99 · تمرين 33",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P97E2_33.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p097.jpg",
+      "pages/u2/p098.jpg",
+      "pages/u2/p099.jpg"
      ]
     },
     {
@@ -675,6 +857,10 @@ window.BOOK = {
        "label": "صفحة 100 · تمرين 34",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P98E2_34.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p100.jpg",
+      "pages/u2/p101.jpg"
      ]
     },
     {
@@ -704,6 +890,10 @@ window.BOOK = {
        "label": "صفحة 103 · تمرين 42",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P101E2_42.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p102.jpg",
+      "pages/u2/p103.jpg"
      ]
     },
     {
@@ -716,12 +906,18 @@ window.BOOK = {
        "label": "صفحة 104 · تمرين 43",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P102E2_43.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p104.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       105
+     ],
+     "images": [
+      "pages/u2/p105.jpg"
      ]
     },
     {
@@ -729,6 +925,10 @@ window.BOOK = {
      "pages": [
       106,
       107
+     ],
+     "images": [
+      "pages/u2/p106.jpg",
+      "pages/u2/p107.jpg"
      ]
     }
    ]
@@ -748,12 +948,19 @@ window.BOOK = {
        "label": "صفحة 109",
        "url": "https://wmkn.sa/SIqraa/video/L1SU2L3P107CV.mov"
       }
+     ],
+     "images": [
+      "pages/u2/p108.jpg",
+      "pages/u2/p109.jpg"
      ]
     },
     {
      "title": "نشاط الاستيعاب",
      "pages": [
       110
+     ],
+     "images": [
+      "pages/u2/p110a.jpg"
      ]
     },
     {
@@ -761,7 +968,9 @@ window.BOOK = {
      "pages": [
       110
      ],
-     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+     "images": [
+      "pages/u2/p110b.jpg"
+     ]
     },
     {
      "title": "العناصر اللغوية: الألفاظ والتعبيرات",
@@ -775,6 +984,11 @@ window.BOOK = {
        "label": "صفحة 113 · تمرين 57 (6)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L3P111E2_57_6.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p111.jpg",
+      "pages/u2/p112.jpg",
+      "pages/u2/p113.jpg"
      ]
     },
     {
@@ -788,6 +1002,10 @@ window.BOOK = {
        "label": "صفحة 114 · تمرين 58",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L3P112E2_58.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p114.jpg",
+      "pages/u2/p115.jpg"
      ]
     },
     {
@@ -805,6 +1023,10 @@ window.BOOK = {
        "label": "صفحة 117 · تمرين 66",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L3P115E2_66.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p116.jpg",
+      "pages/u2/p117.jpg"
      ]
     },
     {
@@ -817,12 +1039,18 @@ window.BOOK = {
        "label": "صفحة 118 · تمرين 67",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L3P116E2_67.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p118.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       119
+     ],
+     "images": [
+      "pages/u2/p119.jpg"
      ]
     },
     {
@@ -830,6 +1058,10 @@ window.BOOK = {
      "pages": [
       120,
       121
+     ],
+     "images": [
+      "pages/u2/p120.jpg",
+      "pages/u2/p121.jpg"
      ]
     }
    ]
@@ -855,12 +1087,19 @@ window.BOOK = {
        "label": "صفحة 123 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P121CW.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p122.jpg",
+      "pages/u2/p123.jpg"
      ]
     },
     {
      "title": "نشاط الاستيعاب",
      "pages": [
       124
+     ],
+     "images": [
+      "pages/u2/p124a.jpg"
      ]
     },
     {
@@ -868,6 +1107,10 @@ window.BOOK = {
      "pages": [
       124,
       125
+     ],
+     "images": [
+      "pages/u2/p124b.jpg",
+      "pages/u2/p125.jpg"
      ]
     },
     {
@@ -886,6 +1129,11 @@ window.BOOK = {
        "label": "صفحة 128 · تمرين 81 (2)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P126E2_81_2.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p126.jpg",
+      "pages/u2/p127.jpg",
+      "pages/u2/p128.jpg"
      ]
     },
     {
@@ -899,6 +1147,10 @@ window.BOOK = {
        "label": "صفحة 129 · تمرين 82",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P127E2_82.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p129.jpg",
+      "pages/u2/p130.jpg"
      ]
     },
     {
@@ -929,6 +1181,11 @@ window.BOOK = {
        "label": "صفحة 133 · تمرين 91",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P131E2_91.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p131.jpg",
+      "pages/u2/p132.jpg",
+      "pages/u2/p133.jpg"
      ]
     },
     {
@@ -941,12 +1198,18 @@ window.BOOK = {
        "label": "صفحة 134 · تمرين 92",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P132E2_92.wav"
       }
+     ],
+     "images": [
+      "pages/u2/p134.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       135
+     ],
+     "images": [
+      "pages/u2/p135.jpg"
      ]
     },
     {
@@ -954,6 +1217,10 @@ window.BOOK = {
      "pages": [
       136,
       137
+     ],
+     "images": [
+      "pages/u2/p136.jpg",
+      "pages/u2/p137.jpg"
      ]
     }
    ]
@@ -970,6 +1237,13 @@ window.BOOK = {
       140,
       141,
       142
+     ],
+     "images": [
+      "pages/u2/p138.jpg",
+      "pages/u2/p139.jpg",
+      "pages/u2/p140.jpg",
+      "pages/u2/p141.jpg",
+      "pages/u2/p142.jpg"
      ],
      "audio": [
       {
@@ -1002,12 +1276,20 @@ window.BOOK = {
        "label": "صفحة 145 · الحوار A",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P143CW_A.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p144.jpg",
+      "pages/u3/p145.jpg",
+      "pages/u3/p146.jpg"
      ]
     },
     {
      "title": "نشاط الاستيعاب",
      "pages": [
       147
+     ],
+     "images": [
+      "pages/u3/p147a.jpg"
      ]
     },
     {
@@ -1015,7 +1297,9 @@ window.BOOK = {
      "pages": [
       147
      ],
-     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+     "images": [
+      "pages/u3/p147b.jpg"
+     ]
     },
     {
      "title": "العناصر اللغوية: الألفاظ والتعبيرات",
@@ -1034,6 +1318,12 @@ window.BOOK = {
        "label": "صفحة 151 · تمرين 8 (2)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P149E3_8_2.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p148.jpg",
+      "pages/u3/p149.jpg",
+      "pages/u3/p150.jpg",
+      "pages/u3/p151.jpg"
      ]
     },
     {
@@ -1047,6 +1337,10 @@ window.BOOK = {
        "label": "صفحة 152 · تمرين 9",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P150E3_9.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p152.jpg",
+      "pages/u3/p153.jpg"
      ]
     },
     {
@@ -1064,6 +1358,10 @@ window.BOOK = {
        "label": "صفحة 155 · تمرين 18",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P153E3_18.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p154.jpg",
+      "pages/u3/p155.jpg"
      ]
     },
     {
@@ -1076,12 +1374,18 @@ window.BOOK = {
        "label": "صفحة 156 · تمرين 19",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P154E3_19.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p156.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       157
+     ],
+     "images": [
+      "pages/u3/p157.jpg"
      ]
     },
     {
@@ -1089,6 +1393,10 @@ window.BOOK = {
      "pages": [
       158,
       159
+     ],
+     "images": [
+      "pages/u3/p158.jpg",
+      "pages/u3/p159.jpg"
      ]
     }
    ]
@@ -1108,12 +1416,19 @@ window.BOOK = {
        "label": "صفحة 161",
        "url": "https://wmkn.sa/SIqraa/video/L1SU3L2P159CV.mov"
       }
+     ],
+     "images": [
+      "pages/u3/p160.jpg",
+      "pages/u3/p161.jpg"
      ]
     },
     {
      "title": "نشاط الاستيعاب",
      "pages": [
       162
+     ],
+     "images": [
+      "pages/u3/p162a.jpg"
      ]
     },
     {
@@ -1121,13 +1436,19 @@ window.BOOK = {
      "pages": [
       162
      ],
-     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+     "images": [
+      "pages/u3/p162b.jpg"
+     ]
     },
     {
      "title": "العناصر اللغوية: الألفاظ والتعبيرات",
      "pages": [
       163,
       164
+     ],
+     "images": [
+      "pages/u3/p163.jpg",
+      "pages/u3/p164.jpg"
      ]
     },
     {
@@ -1141,6 +1462,10 @@ window.BOOK = {
        "label": "صفحة 165 · تمرين 33",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L2P163E3_33.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p165.jpg",
+      "pages/u3/p166.jpg"
      ]
     },
     {
@@ -1163,6 +1488,11 @@ window.BOOK = {
        "label": "صفحة 169 · تمرين 43",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L2P167E3_43.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p167.jpg",
+      "pages/u3/p168.jpg",
+      "pages/u3/p169.jpg"
      ]
     },
     {
@@ -1175,18 +1505,27 @@ window.BOOK = {
        "label": "صفحة 170 · تمرين 44",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L2P168E3_44.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p170.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       171
+     ],
+     "images": [
+      "pages/u3/p171.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: الكتابة",
      "pages": [
       172
+     ],
+     "images": [
+      "pages/u3/p172.jpg"
      ]
     }
    ]
@@ -1206,18 +1545,28 @@ window.BOOK = {
        "label": "صفحة 174",
        "url": "https://wmkn.sa/SIqraa/video/L1SU3L3P172CV.mov"
       }
+     ],
+     "images": [
+      "pages/u3/p173.jpg",
+      "pages/u3/p174.jpg"
      ]
     },
     {
      "title": "نشاط الاستيعاب",
      "pages": [
       175
+     ],
+     "images": [
+      "pages/u3/p175.jpg"
      ]
     },
     {
      "title": "الأنشطة التواصلية",
      "pages": [
       176
+     ],
+     "images": [
+      "pages/u3/p176.jpg"
      ]
     },
     {
@@ -1225,6 +1574,10 @@ window.BOOK = {
      "pages": [
       177,
       178
+     ],
+     "images": [
+      "pages/u3/p177.jpg",
+      "pages/u3/p178.jpg"
      ]
     },
     {
@@ -1238,6 +1591,10 @@ window.BOOK = {
        "label": "صفحة 179 · تمرين 59",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L3P177E3_59.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p179.jpg",
+      "pages/u3/p180.jpg"
      ]
     },
     {
@@ -1260,6 +1617,11 @@ window.BOOK = {
        "label": "صفحة 183 · تمرين 69",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L3P181E3_69.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p181.jpg",
+      "pages/u3/p182.jpg",
+      "pages/u3/p183.jpg"
      ]
     },
     {
@@ -1272,18 +1634,27 @@ window.BOOK = {
        "label": "صفحة 184 · تمرين 70",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L3P182E3_70.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p184.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       185
+     ],
+     "images": [
+      "pages/u3/p185.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: الكتابة",
      "pages": [
       186
+     ],
+     "images": [
+      "pages/u3/p186.jpg"
      ]
     }
    ]
@@ -1303,12 +1674,19 @@ window.BOOK = {
        "label": "صفحة 188 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L4P186CW.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p187.jpg",
+      "pages/u3/p188.jpg"
      ]
     },
     {
      "title": "نشاط الاستيعاب",
      "pages": [
       189
+     ],
+     "images": [
+      "pages/u3/p189a.jpg"
      ]
     },
     {
@@ -1316,7 +1694,9 @@ window.BOOK = {
      "pages": [
       189
      ],
-     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+     "images": [
+      "pages/u3/p189b.jpg"
+     ]
     },
     {
      "title": "العناصر اللغوية: الألفاظ والتعبيرات",
@@ -1329,6 +1709,10 @@ window.BOOK = {
        "label": "صفحة 191 · تمرين 84 (4)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L4P189E3_84_4.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p190.jpg",
+      "pages/u3/p191.jpg"
      ]
     },
     {
@@ -1342,6 +1726,10 @@ window.BOOK = {
        "label": "صفحة 192 · تمرين 85",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L4P190E3_85.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p192.jpg",
+      "pages/u3/p193.jpg"
      ]
     },
     {
@@ -1359,6 +1747,10 @@ window.BOOK = {
        "label": "صفحة 195 · تمرين 92",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L4P193E3_92.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p194.jpg",
+      "pages/u3/p195.jpg"
      ]
     },
     {
@@ -1371,12 +1763,18 @@ window.BOOK = {
        "label": "صفحة 196 · تمرين 94",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L4P194E3_94.wav"
       }
+     ],
+     "images": [
+      "pages/u3/p196.jpg"
      ]
     },
     {
      "title": "التواصل الكتابي: القراءة",
      "pages": [
       197
+     ],
+     "images": [
+      "pages/u3/p197.jpg"
      ]
     },
     {
@@ -1384,6 +1782,10 @@ window.BOOK = {
      "pages": [
       198,
       199
+     ],
+     "images": [
+      "pages/u3/p198.jpg",
+      "pages/u3/p199.jpg"
      ]
     }
    ]
@@ -1398,6 +1800,11 @@ window.BOOK = {
       200,
       201,
       202
+     ],
+     "images": [
+      "pages/u3/p200.jpg",
+      "pages/u3/p201.jpg",
+      "pages/u3/p202.jpg"
      ],
      "audio": [
       {

@@ -43,6 +43,7 @@ li.line.on b{color:var(--green)}
 .tool{padding:.5rem 1rem;border:0;border-radius:.5rem;background:var(--green);color:#fff;font:inherit;cursor:pointer;margin:.5rem 0}
 .tool:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .out{width:100%;font:.9rem monospace;direction:ltr}
+.pg{display:block;width:100%;height:auto;margin:.75rem 0;border:1px solid var(--line);border-radius:.5rem;background:#fff}
 @media (max-width:52rem){.wrap{grid-template-columns:1fr}}
 </style>
 </head>
@@ -114,10 +115,15 @@ function renderMain() {
     return vid;
   });
   (s.audio || []).forEach(a => box.append(el("p", { className: "meta", textContent: a.label }), media("audio", a.url)));
-  if (!vids.length && !s.audio && !s.lines) {
-    box.append(el("div", { className: "empty", textContent: "لا توجد وسائط في هذا القسم. راجع الصفحات المذكورة في الكتاب." }));
-  }
   if (s.lines && vids[0]) dialogue(box, s, vids[0]);
+  (s.images || []).forEach((src, i) => box.append(
+    el("a", { href: src, target: "_blank", rel: "noopener" }, [
+      el("img", { src, className: "pg", loading: "lazy", alt: `${s.title} - صورة ${i + 1}` })
+    ])
+  ));
+  if (!vids.length && !s.audio && !s.lines && !(s.images || []).length) {
+    box.append(el("div", { className: "empty", textContent: "لا يوجد محتوى في هذا القسم. راجع الصفحات المذكورة في الكتاب." }));
+  }
 }
 
 // تظليل سطر الحوار مع الفيديو. إن لم توجد times يُقدَّر توزيع الأسطر على مدة الفيديو.
