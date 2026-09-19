@@ -1,6 +1,8 @@
-// بيانات كتاب الطالب الأول. الصفحات المذكورة هي أرقام صفحات ملف PDF.
+// بيانات كتاب الطالب الأول. أرقام الصفحات هي أرقام صفحات ملف PDF.
 // video و audio: الروابط نفسها الموجودة في باركود الكتاب، ولا حاجة لتنزيل أي ملف.
-// lines: نص الحوار (موجود للدرس الأول فقط حاليًا). t: ثانية بدء السطر في الفيديو، واتركها null حتى تقيسها.
+// lines: نص الحوار (موجود للدرس الأول فقط حاليًا).
+// times: أزمنة بداية أسطر الحوار بالثواني، مثل times: [1.2, 3.4, ...] وتُنسخ من صفحة الموقع بإضافة ?edit إلى الرابط.
+// وحتى تضاف times يكون تظليل الحوار تقديريًا.
 window.BOOK = {
  "title": "كتاب الطالب الأول",
  "lessons": [
@@ -9,106 +11,138 @@ window.BOOK = {
    "title": "الدرس الأول",
    "sections": [
     {
-     "title": "الفيديو والحوار · صفحة 19",
-     "page": 19,
-     "video": "https://wmkn.sa/SIqraa/video/L1SU1L1P17CV.mov",
+     "title": "الفيديو والحوار",
+     "pages": [
+      18,
+      19
+     ],
+     "videos": [
+      {
+       "label": "صفحة 19",
+       "url": "https://wmkn.sa/SIqraa/video/L1SU1L1P17CV.mov"
+      }
+     ],
      "audio": [
       {
-       "label": "الحوار",
+       "label": "صفحة 19 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L1P17CW.wav"
       }
      ],
      "lines": [
       {
        "who": "باسم",
-       "text": "السلام عليكم.",
-       "t": null
+       "text": "السلام عليكم."
       },
       {
        "who": "مريم",
-       "text": "وعليكم السلام.",
-       "t": null
+       "text": "وعليكم السلام."
       },
       {
        "who": "باسم",
-       "text": "كيف الحال؟",
-       "t": null
+       "text": "كيف الحال؟"
       },
       {
        "who": "مريم",
-       "text": "بخير، والحمد لله! وأنت؟",
-       "t": null
+       "text": "بخير، والحمد لله! وأنت؟"
       },
       {
        "who": "باسم",
-       "text": "بخير، والحمد لله.",
-       "t": null
+       "text": "بخير، والحمد لله."
       },
       {
        "who": "باسم",
-       "text": "أنا باسم.",
-       "t": null
+       "text": "أنا باسم."
       },
       {
        "who": "مريم",
-       "text": "أهلًا باسم.",
-       "t": null
+       "text": "أهلًا باسم."
       },
       {
        "who": "باسم",
-       "text": "وأنتِ؟",
-       "t": null
+       "text": "وأنتِ؟"
       },
       {
        "who": "مريم",
-       "text": "أنا مريم.",
-       "t": null
+       "text": "أنا مريم."
       },
       {
        "who": "باسم",
-       "text": "أهلًا وسهلًا مريم.",
-       "t": null
+       "text": "أهلًا وسهلًا مريم."
       }
      ]
     },
     {
-     "title": "صفحة 23",
-     "page": 23,
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      20
+     ]
+    },
+    {
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      20
+     ],
+     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      21,
+      22
+     ]
+    },
+    {
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      23
+     ],
      "audio": [
       {
-       "label": "تمرين 1_7",
+       "label": "صفحة 23 · تمرين 7",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L1P21E1_7.wav"
       }
      ]
     },
     {
-     "title": "صفحة 24",
-     "page": 24,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      24,
+      25
+     ],
      "audio": [
       {
-       "label": "تمرين 1_10",
+       "label": "صفحة 24 · تمرين 10",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L1P22E1_10.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 25",
-     "page": 25,
-     "audio": [
+      },
       {
-       "label": "تمرين 1_13",
+       "label": "صفحة 25 · تمرين 13",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L1P23E1_13.wav"
       }
      ]
     },
     {
-     "title": "صفحة 26",
-     "page": 26,
+     "title": "فهم المسموع",
+     "pages": [
+      26
+     ],
      "audio": [
       {
-       "label": "تمرين 1_14",
+       "label": "صفحة 26 · تمرين 14",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L1P24E1_14.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      27
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      28,
+      29
      ]
     }
    ]
@@ -118,74 +152,110 @@ window.BOOK = {
    "title": "الدرس الثاني",
    "sections": [
     {
-     "title": "صفحة 31",
-     "page": 31,
-     "video": "https://wmkn.sa/SIqraa/video/L1SU1L2P29CV.mov",
+     "title": "الفيديو والحوار",
+     "pages": [
+      30,
+      31
+     ],
+     "videos": [
+      {
+       "label": "صفحة 31",
+       "url": "https://wmkn.sa/SIqraa/video/L1SU1L2P29CV.mov"
+      }
+     ],
      "audio": [
       {
-       "label": "الحوار",
+       "label": "صفحة 31 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P29CW.wav"
       }
      ]
     },
     {
-     "title": "صفحة 32",
-     "page": 32,
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      32
+     ],
      "audio": [
       {
-       "label": "تمرين 1_22",
+       "label": "صفحة 32 · تمرين 22",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P30E1_22.wav"
       }
      ]
     },
     {
-     "title": "صفحة 35",
-     "page": 35,
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      32
+     ],
+     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      33,
+      34,
+      35
+     ],
      "audio": [
       {
-       "label": "تمرين 1_28_1",
+       "label": "صفحة 35 · تمرين 28 (1)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P33E1_28_1.wav"
       }
      ]
     },
     {
-     "title": "صفحة 36",
-     "page": 36,
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      36,
+      37
+     ],
      "audio": [
       {
-       "label": "تمرين 1_29",
+       "label": "صفحة 36 · تمرين 29",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P34E1_29.wav"
       }
      ]
     },
     {
-     "title": "صفحة 38",
-     "page": 38,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      38,
+      39
+     ],
      "audio": [
       {
-       "label": "تمرين 1_34_2",
+       "label": "صفحة 38 · تمرين 34 (2)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P36E1_34_2.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 39",
-     "page": 39,
-     "audio": [
+      },
       {
-       "label": "تمرين 1_37",
+       "label": "صفحة 39 · تمرين 37",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P37E1_37.wav"
       }
      ]
     },
     {
-     "title": "صفحة 40",
-     "page": 40,
+     "title": "فهم المسموع",
+     "pages": [
+      40
+     ],
      "audio": [
       {
-       "label": "تمرين 1_38",
+       "label": "صفحة 40 · تمرين 38",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L2P38E1_38.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      41
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      42,
+      43
      ]
     }
    ]
@@ -195,89 +265,124 @@ window.BOOK = {
    "title": "الدرس الثالث",
    "sections": [
     {
-     "title": "صفحة 45",
-     "page": 45,
-     "video": "https://wmkn.sa/SIqraa/video/L1SU1L3P43CV_A.mov",
-     "audio": [
+     "title": "الفيديو والحوار",
+     "pages": [
+      44,
+      45,
+      46
+     ],
+     "videos": [
       {
-       "label": "الحوار A",
-       "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P43CW_A.wav"
+       "label": "صفحة 45",
+       "url": "https://wmkn.sa/SIqraa/video/L1SU1L3P43CV_A.mov"
+      },
+      {
+       "label": "صفحة 46",
+       "url": "https://wmkn.sa/SIqraa/video/L1SU1L3P44CV_B.mov"
       }
-     ]
-    },
-    {
-     "title": "صفحة 46",
-     "page": 46,
-     "video": "https://wmkn.sa/SIqraa/video/L1SU1L3P44CV_B.mov",
+     ],
      "audio": [
       {
-       "label": "الحوار B",
+       "label": "صفحة 45 · الحوار A",
+       "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P43CW_A.wav"
+      },
+      {
+       "label": "صفحة 46 · الحوار B",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P44CW_B.wav"
       }
      ]
     },
     {
-     "title": "صفحة 47",
-     "page": 47,
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      47
+     ],
      "audio": [
       {
-       "label": "تمرين 1_46",
+       "label": "صفحة 47 · تمرين 46",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P45E1_46.wav"
       }
      ]
     },
     {
-     "title": "صفحة 51",
-     "page": 51,
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      47
+     ],
+     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      48,
+      49,
+      50,
+      51
+     ],
      "audio": [
       {
-       "label": "تمرين 1_53_2",
-       "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P49E1_53_2.wav"
+       "label": "صفحة 51 · تمرين 53 (1)",
+       "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P49E1_53_1.wav"
       },
       {
-       "label": "تمرين 1_53_1",
-       "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P49E1_53_1.wav"
+       "label": "صفحة 51 · تمرين 53 (2)",
+       "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P49E1_53_2.wav"
       }
      ]
     },
     {
-     "title": "صفحة 52",
-     "page": 52,
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      52,
+      53
+     ],
      "audio": [
       {
-       "label": "تمرين 1_54",
+       "label": "صفحة 52 · تمرين 54",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P50E1_54.wav"
       }
      ]
     },
     {
-     "title": "صفحة 54",
-     "page": 54,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      54,
+      55
+     ],
      "audio": [
       {
-       "label": "تمرين 1_59_3",
+       "label": "صفحة 54 · تمرين 59 (3)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P52E1_59_3.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 55",
-     "page": 55,
-     "audio": [
+      },
       {
-       "label": "تمرين 1_61",
+       "label": "صفحة 55 · تمرين 61",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P53E1_61.wav"
       }
      ]
     },
     {
-     "title": "صفحة 56",
-     "page": 56,
+     "title": "فهم المسموع",
+     "pages": [
+      56
+     ],
      "audio": [
       {
-       "label": "تمرين 1_63",
+       "label": "صفحة 56 · تمرين 63",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L3P54E1_63.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      57
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      58,
+      59
      ]
     }
    ]
@@ -287,68 +392,116 @@ window.BOOK = {
    "title": "الدرس الرابع",
    "sections": [
     {
-     "title": "صفحة 61",
-     "page": 61,
-     "video": "https://wmkn.sa/SIqraa/video/L1SU1L4P59CV.mov",
+     "title": "الفيديو والحوار",
+     "pages": [
+      60,
+      61
+     ],
+     "videos": [
+      {
+       "label": "صفحة 61",
+       "url": "https://wmkn.sa/SIqraa/video/L1SU1L4P59CV.mov"
+      }
+     ],
      "audio": [
       {
-       "label": "الحوار",
+       "label": "صفحة 61 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L4P59CW.wav"
       }
      ]
     },
     {
-     "title": "صفحة 65",
-     "page": 65,
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      62
+     ]
+    },
+    {
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      62
+     ],
+     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      63,
+      64
+     ]
+    },
+    {
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      65,
+      66
+     ],
      "audio": [
       {
-       "label": "تمرين 1_77",
+       "label": "صفحة 65 · تمرين 77",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L4P63E1_77.wav"
       }
      ]
     },
     {
-     "title": "صفحة 67",
-     "page": 67,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      67,
+      68
+     ],
      "audio": [
       {
-       "label": "تمرين 1_84",
+       "label": "صفحة 67 · تمرين 84",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L4P65E1_84.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 68",
-     "page": 68,
-     "audio": [
+      },
       {
-       "label": "تمرين 1_85",
+       "label": "صفحة 68 · تمرين 85",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L4P66E1_85.wav"
       }
      ]
     },
     {
-     "title": "صفحة 69",
-     "page": 69,
+     "title": "فهم المسموع",
+     "pages": [
+      69
+     ],
      "audio": [
       {
-       "label": "تمرين 1_86",
+       "label": "صفحة 69 · تمرين 86",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L4P67E1_86.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      70
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      71,
+      72
      ]
     }
    ]
   },
   {
    "unit": "الوحدة الأولى · التحية والتعارف",
-   "title": "الدرس الخامس",
+   "title": "ختام الوحدة",
    "sections": [
     {
-     "title": "صفحة 75",
-     "page": 75,
+     "title": "ختام الوحدة",
+     "pages": [
+      73,
+      74,
+      75,
+      76
+     ],
      "audio": [
       {
-       "label": "تمرين 1_97",
+       "label": "صفحة 75 · تمرين 97",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU1L5P73E1_97.wav"
       }
      ]
@@ -360,74 +513,109 @@ window.BOOK = {
    "title": "الدرس الأول",
    "sections": [
     {
-     "title": "صفحة 79",
-     "page": 79,
-     "video": "https://wmkn.sa/SIqraa/video/L1SU2L1P77CV.mov",
+     "title": "الفيديو والحوار",
+     "pages": [
+      78,
+      79
+     ],
+     "videos": [
+      {
+       "label": "صفحة 79",
+       "url": "https://wmkn.sa/SIqraa/video/L1SU2L1P77CV.mov"
+      }
+     ],
      "audio": [
       {
-       "label": "الحوار",
+       "label": "صفحة 79 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P77CW.wav"
       }
      ]
     },
     {
-     "title": "صفحة 83",
-     "page": 83,
-     "audio": [
-      {
-       "label": "تمرين 2_8_1",
-       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P81E2_8_1.wav"
-      }
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      80
      ]
     },
     {
-     "title": "صفحة 84",
-     "page": 84,
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      80
+     ],
+     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      81,
+      82,
+      83,
+      84
+     ],
      "audio": [
       {
-       "label": "تمرين 2_8_3",
+       "label": "صفحة 83 · تمرين 8 (1)",
+       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P81E2_8_1.wav"
+      },
+      {
+       "label": "صفحة 84 · تمرين 8 (3)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P82E2_8_3.wav"
       }
      ]
     },
     {
-     "title": "صفحة 85",
-     "page": 85,
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      85,
+      86
+     ],
      "audio": [
       {
-       "label": "تمرين 2_9",
+       "label": "صفحة 85 · تمرين 9",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P83E2_9.wav"
       }
      ]
     },
     {
-     "title": "صفحة 87",
-     "page": 87,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      87,
+      88
+     ],
      "audio": [
       {
-       "label": "تمرين 2_16",
+       "label": "صفحة 87 · تمرين 16",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P85E2_16.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 88",
-     "page": 88,
-     "audio": [
+      },
       {
-       "label": "تمرين 2_17",
+       "label": "صفحة 88 · تمرين 17",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P86E2_17.wav"
       }
      ]
     },
     {
-     "title": "صفحة 89",
-     "page": 89,
+     "title": "فهم المسموع",
+     "pages": [
+      89
+     ],
      "audio": [
       {
-       "label": "تمرين 2_18",
+       "label": "صفحة 89 · تمرين 18",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L1P87E2_18.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      90
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      91,
+      92
      ]
     }
    ]
@@ -437,75 +625,110 @@ window.BOOK = {
    "title": "الدرس الثاني",
    "sections": [
     {
-     "title": "صفحة 94",
-     "page": 94,
+     "title": "الفيديو والحوار",
+     "pages": [
+      93,
+      94
+     ],
      "audio": [
       {
-       "label": "الحوار",
+       "label": "صفحة 94 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P92CW.wav"
       }
      ]
     },
     {
-     "title": "صفحة 99",
-     "page": 99,
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      95
+     ]
+    },
+    {
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      95,
+      96
+     ]
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      97,
+      98,
+      99
+     ],
      "audio": [
       {
-       "label": "تمرين 2_33",
+       "label": "صفحة 99 · تمرين 33",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P97E2_33.wav"
       }
      ]
     },
     {
-     "title": "صفحة 100",
-     "page": 100,
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      100,
+      101
+     ],
      "audio": [
       {
-       "label": "تمرين 2_34",
+       "label": "صفحة 100 · تمرين 34",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P98E2_34.wav"
       }
      ]
     },
     {
-     "title": "صفحة 102",
-     "page": 102,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      102,
+      103
+     ],
      "audio": [
       {
-       "label": "تمرين 2_39_3",
-       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P100E2_39_3.wav"
+       "label": "صفحة 102 · تمرين 39 (1)",
+       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P100E2_39_1.wav"
       },
       {
-       "label": "تمرين 2_39_2",
+       "label": "صفحة 102 · تمرين 39 (2)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P100E2_39_2.wav"
       },
       {
-       "label": "تمرين 2_39_1",
-       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P100E2_39_1.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 103",
-     "page": 103,
-     "audio": [
+       "label": "صفحة 102 · تمرين 39 (3)",
+       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P100E2_39_3.wav"
+      },
       {
-       "label": "تمرين 2_41",
+       "label": "صفحة 103 · تمرين 41",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P101E2_41.wav"
       },
       {
-       "label": "تمرين 2_42",
+       "label": "صفحة 103 · تمرين 42",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P101E2_42.wav"
       }
      ]
     },
     {
-     "title": "صفحة 104",
-     "page": 104,
+     "title": "فهم المسموع",
+     "pages": [
+      104
+     ],
      "audio": [
       {
-       "label": "تمرين 2_43",
+       "label": "صفحة 104 · تمرين 43",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L2P102E2_43.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      105
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      106,
+      107
      ]
     }
    ]
@@ -515,52 +738,98 @@ window.BOOK = {
    "title": "الدرس الثالث",
    "sections": [
     {
-     "title": "صفحة 109",
-     "page": 109,
-     "video": "https://wmkn.sa/SIqraa/video/L1SU2L3P107CV.mov"
+     "title": "الفيديو والحوار",
+     "pages": [
+      108,
+      109
+     ],
+     "videos": [
+      {
+       "label": "صفحة 109",
+       "url": "https://wmkn.sa/SIqraa/video/L1SU2L3P107CV.mov"
+      }
+     ]
     },
     {
-     "title": "صفحة 113",
-     "page": 113,
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      110
+     ]
+    },
+    {
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      110
+     ],
+     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      111,
+      112,
+      113
+     ],
      "audio": [
       {
-       "label": "تمرين 2_57_6",
+       "label": "صفحة 113 · تمرين 57 (6)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L3P111E2_57_6.wav"
       }
      ]
     },
     {
-     "title": "صفحة 114",
-     "page": 114,
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      114,
+      115
+     ],
      "audio": [
       {
-       "label": "تمرين 2_58",
+       "label": "صفحة 114 · تمرين 58",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L3P112E2_58.wav"
       }
      ]
     },
     {
-     "title": "صفحة 117",
-     "page": 117,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      116,
+      117
+     ],
      "audio": [
       {
-       "label": "تمرين 2_64",
+       "label": "صفحة 117 · تمرين 64",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L3P115E2_64.wav"
       },
       {
-       "label": "تمرين 2_66",
+       "label": "صفحة 117 · تمرين 66",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L3P115E2_66.wav"
       }
      ]
     },
     {
-     "title": "صفحة 118",
-     "page": 118,
+     "title": "فهم المسموع",
+     "pages": [
+      118
+     ],
      "audio": [
       {
-       "label": "تمرين 2_67",
+       "label": "صفحة 118 · تمرين 67",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L3P116E2_67.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      119
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      120,
+      121
      ]
     }
    ]
@@ -570,100 +839,141 @@ window.BOOK = {
    "title": "الدرس الرابع",
    "sections": [
     {
-     "title": "صفحة 123",
-     "page": 123,
-     "video": "https://wmkn.sa/SIqraa/video/L1SU2L4P121CV.mov",
+     "title": "الفيديو والحوار",
+     "pages": [
+      122,
+      123
+     ],
+     "videos": [
+      {
+       "label": "صفحة 123",
+       "url": "https://wmkn.sa/SIqraa/video/L1SU2L4P121CV.mov"
+      }
+     ],
      "audio": [
       {
-       "label": "الحوار",
+       "label": "صفحة 123 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P121CW.wav"
       }
      ]
     },
     {
-     "title": "صفحة 128",
-     "page": 128,
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      124
+     ]
+    },
+    {
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      124,
+      125
+     ]
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      126,
+      127,
+      128
+     ],
      "audio": [
       {
-       "label": "تمرين 2_81_2",
-       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P126E2_81_2.wav"
+       "label": "صفحة 128 · تمرين 81 (1)",
+       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P126E2_81_1.wav"
       },
       {
-       "label": "تمرين 2_81_1",
-       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P126E2_81_1.wav"
+       "label": "صفحة 128 · تمرين 81 (2)",
+       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P126E2_81_2.wav"
       }
      ]
     },
     {
-     "title": "صفحة 129",
-     "page": 129,
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      129,
+      130
+     ],
      "audio": [
       {
-       "label": "تمرين 2_82",
+       "label": "صفحة 129 · تمرين 82",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P127E2_82.wav"
       }
      ]
     },
     {
-     "title": "صفحة 131",
-     "page": 131,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      131,
+      132,
+      133
+     ],
      "audio": [
       {
-       "label": "تمرين 2_87",
+       "label": "صفحة 131 · تمرين 87",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P129E2_87.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 132",
-     "page": 132,
-     "audio": [
-      {
-       "label": "تمرين 2_88_2_3",
-       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P130E2_88_2_3.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 133",
-     "page": 133,
-     "audio": [
-      {
-       "label": "تمرين 2_91",
-       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P131E2_91.wav"
       },
       {
-       "label": "تمرين 2_89",
+       "label": "صفحة 132 · تمرين 88 (2)",
+       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P130E2_88_2_3.wav"
+      },
+      {
+       "label": "صفحة 133 · تمرين 89",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P131E2_89.wav"
       },
       {
-       "label": "تمرين 2_90",
+       "label": "صفحة 133 · تمرين 90",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P131E2_90.wav"
+      },
+      {
+       "label": "صفحة 133 · تمرين 91",
+       "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P131E2_91.wav"
       }
      ]
     },
     {
-     "title": "صفحة 134",
-     "page": 134,
+     "title": "فهم المسموع",
+     "pages": [
+      134
+     ],
      "audio": [
       {
-       "label": "تمرين 2_92",
+       "label": "صفحة 134 · تمرين 92",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L4P132E2_92.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      135
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      136,
+      137
      ]
     }
    ]
   },
   {
    "unit": "الوحدة الثانية · السفر",
-   "title": "الدرس الخامس",
+   "title": "ختام الوحدة",
    "sections": [
     {
-     "title": "صفحة 140",
-     "page": 140,
+     "title": "ختام الوحدة",
+     "pages": [
+      138,
+      139,
+      140,
+      141,
+      142
+     ],
      "audio": [
       {
-       "label": "تمرين 2_102",
+       "label": "صفحة 140 · تمرين 102",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU2L5P138E2_102.wav"
       }
      ]
@@ -675,78 +985,110 @@ window.BOOK = {
    "title": "الدرس الأول",
    "sections": [
     {
-     "title": "صفحة 145",
-     "page": 145,
+     "title": "الفيديو والحوار",
+     "pages": [
+      144,
+      145,
+      146
+     ],
+     "videos": [
+      {
+       "label": "صفحة 146",
+       "url": "https://wmkn.sa/SIqraa/video/L1SU3L1P144CV_B.mov"
+      }
+     ],
      "audio": [
       {
-       "label": "الحوار A",
+       "label": "صفحة 145 · الحوار A",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P143CW_A.wav"
       }
      ]
     },
     {
-     "title": "صفحة 146",
-     "page": 146,
-     "video": "https://wmkn.sa/SIqraa/video/L1SU3L1P144CV_B.mov"
-    },
-    {
-     "title": "صفحة 150",
-     "page": 150,
-     "audio": [
-      {
-       "label": "تمرين 3_8_1",
-       "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P148E3_8_1.wav"
-      }
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      147
      ]
     },
     {
-     "title": "صفحة 151",
-     "page": 151,
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      147
+     ],
+     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      148,
+      149,
+      150,
+      151
+     ],
      "audio": [
       {
-       "label": "تمرين 3_8_2",
+       "label": "صفحة 150 · تمرين 8 (1)",
+       "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P148E3_8_1.wav"
+      },
+      {
+       "label": "صفحة 151 · تمرين 8 (2)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P149E3_8_2.wav"
       }
      ]
     },
     {
-     "title": "صفحة 152",
-     "page": 152,
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      152,
+      153
+     ],
      "audio": [
       {
-       "label": "تمرين 3_9",
+       "label": "صفحة 152 · تمرين 9",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P150E3_9.wav"
       }
      ]
     },
     {
-     "title": "صفحة 154",
-     "page": 154,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      154,
+      155
+     ],
      "audio": [
       {
-       "label": "تمرين 3_14",
+       "label": "صفحة 154 · تمرين 14",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P152E3_14.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 155",
-     "page": 155,
-     "audio": [
+      },
       {
-       "label": "تمرين 3_18",
+       "label": "صفحة 155 · تمرين 18",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P153E3_18.wav"
       }
      ]
     },
     {
-     "title": "صفحة 156",
-     "page": 156,
+     "title": "فهم المسموع",
+     "pages": [
+      156
+     ],
      "audio": [
       {
-       "label": "تمرين 3_19",
+       "label": "صفحة 156 · تمرين 19",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L1P154E3_19.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      157
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      158,
+      159
      ]
     }
    ]
@@ -756,58 +1098,95 @@ window.BOOK = {
    "title": "الدرس الثاني",
    "sections": [
     {
-     "title": "صفحة 161",
-     "page": 161,
-     "video": "https://wmkn.sa/SIqraa/video/L1SU3L2P159CV.mov"
+     "title": "الفيديو والحوار",
+     "pages": [
+      160,
+      161
+     ],
+     "videos": [
+      {
+       "label": "صفحة 161",
+       "url": "https://wmkn.sa/SIqraa/video/L1SU3L2P159CV.mov"
+      }
+     ]
     },
     {
-     "title": "صفحة 165",
-     "page": 165,
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      162
+     ]
+    },
+    {
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      162
+     ],
+     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      163,
+      164
+     ]
+    },
+    {
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      165,
+      166
+     ],
      "audio": [
       {
-       "label": "تمرين 3_33",
+       "label": "صفحة 165 · تمرين 33",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L2P163E3_33.wav"
       }
      ]
     },
     {
-     "title": "صفحة 167",
-     "page": 167,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      167,
+      168,
+      169
+     ],
      "audio": [
       {
-       "label": "تمرين 3_39",
+       "label": "صفحة 167 · تمرين 39",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L2P165E3_39.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 168",
-     "page": 168,
-     "audio": [
+      },
       {
-       "label": "تمرين 3_40_1",
+       "label": "صفحة 168 · تمرين 40 (1)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L2P166E3_40_1.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 169",
-     "page": 169,
-     "audio": [
+      },
       {
-       "label": "تمرين 3_43",
+       "label": "صفحة 169 · تمرين 43",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L2P167E3_43.wav"
       }
      ]
     },
     {
-     "title": "صفحة 170",
-     "page": 170,
+     "title": "فهم المسموع",
+     "pages": [
+      170
+     ],
      "audio": [
       {
-       "label": "تمرين 3_44",
+       "label": "صفحة 170 · تمرين 44",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L2P168E3_44.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      171
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      172
      ]
     }
    ]
@@ -817,58 +1196,94 @@ window.BOOK = {
    "title": "الدرس الثالث",
    "sections": [
     {
-     "title": "صفحة 174",
-     "page": 174,
-     "video": "https://wmkn.sa/SIqraa/video/L1SU3L3P172CV.mov"
+     "title": "الفيديو والحوار",
+     "pages": [
+      173,
+      174
+     ],
+     "videos": [
+      {
+       "label": "صفحة 174",
+       "url": "https://wmkn.sa/SIqraa/video/L1SU3L3P172CV.mov"
+      }
+     ]
     },
     {
-     "title": "صفحة 179",
-     "page": 179,
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      175
+     ]
+    },
+    {
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      176
+     ]
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      177,
+      178
+     ]
+    },
+    {
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      179,
+      180
+     ],
      "audio": [
       {
-       "label": "تمرين 3_59",
+       "label": "صفحة 179 · تمرين 59",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L3P177E3_59.wav"
       }
      ]
     },
     {
-     "title": "صفحة 181",
-     "page": 181,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      181,
+      182,
+      183
+     ],
      "audio": [
       {
-       "label": "تمرين 3_65_2",
+       "label": "صفحة 181 · تمرين 65 (2)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L3P179E3_65_2.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 182",
-     "page": 182,
-     "audio": [
+      },
       {
-       "label": "تمرين 3_66_2_5",
+       "label": "صفحة 182 · تمرين 66 (2)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L3P180E3_66_2_5.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 183",
-     "page": 183,
-     "audio": [
+      },
       {
-       "label": "تمرين 3_69",
+       "label": "صفحة 183 · تمرين 69",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L3P181E3_69.wav"
       }
      ]
     },
     {
-     "title": "صفحة 184",
-     "page": 184,
+     "title": "فهم المسموع",
+     "pages": [
+      184
+     ],
      "audio": [
       {
-       "label": "تمرين 3_70",
+       "label": "صفحة 184 · تمرين 70",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L3P182E3_70.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      185
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      186
      ]
     }
    ]
@@ -878,77 +1293,115 @@ window.BOOK = {
    "title": "الدرس الرابع",
    "sections": [
     {
-     "title": "صفحة 188",
-     "page": 188,
+     "title": "الفيديو والحوار",
+     "pages": [
+      187,
+      188
+     ],
      "audio": [
       {
-       "label": "الحوار",
+       "label": "صفحة 188 · الحوار",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L4P186CW.wav"
       }
      ]
     },
     {
-     "title": "صفحة 191",
-     "page": 191,
+     "title": "نشاط الاستيعاب",
+     "pages": [
+      189
+     ]
+    },
+    {
+     "title": "الأنشطة التواصلية",
+     "pages": [
+      189
+     ],
+     "note": "هذه الصفحة تجمع نشاط الاستيعاب والأنشطة التواصلية، ووسائطها في قسم نشاط الاستيعاب."
+    },
+    {
+     "title": "العناصر اللغوية: الألفاظ والتعبيرات",
+     "pages": [
+      190,
+      191
+     ],
      "audio": [
       {
-       "label": "تمرين 3_84_4",
+       "label": "صفحة 191 · تمرين 84 (4)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L4P189E3_84_4.wav"
       }
      ]
     },
     {
-     "title": "صفحة 192",
-     "page": 192,
+     "title": "العناصر اللغوية: التراكيب",
+     "pages": [
+      192,
+      193
+     ],
      "audio": [
       {
-       "label": "تمرين 3_85",
+       "label": "صفحة 192 · تمرين 85",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L4P190E3_85.wav"
       }
      ]
     },
     {
-     "title": "صفحة 194",
-     "page": 194,
+     "title": "العناصر اللغوية: الأصوات",
+     "pages": [
+      194,
+      195
+     ],
      "audio": [
       {
-       "label": "تمرين 3_90_2",
+       "label": "صفحة 194 · تمرين 90 (2)",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L4P192E3_90_2.wav"
-      }
-     ]
-    },
-    {
-     "title": "صفحة 195",
-     "page": 195,
-     "audio": [
+      },
       {
-       "label": "تمرين 3_92",
+       "label": "صفحة 195 · تمرين 92",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L4P193E3_92.wav"
       }
      ]
     },
     {
-     "title": "صفحة 196",
-     "page": 196,
+     "title": "فهم المسموع",
+     "pages": [
+      196
+     ],
      "audio": [
       {
-       "label": "تمرين 3_94",
+       "label": "صفحة 196 · تمرين 94",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L4P194E3_94.wav"
       }
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: القراءة",
+     "pages": [
+      197
+     ]
+    },
+    {
+     "title": "التواصل الكتابي: الكتابة",
+     "pages": [
+      198,
+      199
      ]
     }
    ]
   },
   {
    "unit": "الوحدة الثالثة · الطعام",
-   "title": "الدرس الخامس",
+   "title": "ختام الوحدة",
    "sections": [
     {
-     "title": "صفحة 200",
-     "page": 200,
+     "title": "ختام الوحدة",
+     "pages": [
+      200,
+      201,
+      202
+     ],
      "audio": [
       {
-       "label": "تمرين 3_102",
+       "label": "صفحة 200 · تمرين 102",
        "url": "http://wmkn.sa/SIqraa/audio/L1SU3L5P198E3_102.wav"
       }
      ]

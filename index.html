@@ -40,6 +40,9 @@ li.line.on{background:var(--tint);border-inline-start-color:var(--green)}
 li.line.on b{color:var(--green)}
 .empty{padding:2rem 1rem;color:var(--muted);border:1px dashed var(--line);border-radius:.75rem;margin-top:1rem}
 .err{color:#9a3412;font-size:.9rem}
+.tool{padding:.5rem 1rem;border:0;border-radius:.5rem;background:var(--green);color:#fff;font:inherit;cursor:pointer;margin:.5rem 0}
+.tool:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.out{width:100%;font:.9rem monospace;direction:ltr}
 @media (max-width:52rem){.wrap{grid-template-columns:1fr}}
 </style>
 </head>
@@ -88,21 +91,42 @@ function renderNav() {
   }));
 }
 
+const EDIT = new URLSearchParams(location.search).has("edit");
+
+function pageText(p) {
+  if (!p || !p.length) return "";
+  const a = p[0], z = p[p.length - 1];
+  return a === z ? `صفحة ${a}` : `صفحات ${a}–${z}`;
+}
+
 function renderMain() {
   const lesson = B.lessons[L], s = lesson.sections[S];
   const box = $("#main");
   box.replaceChildren(
     el("p", { className: "meta", textContent: `${lesson.unit} · ${lesson.title} · ${S + 1} من ${lesson.sections.length}` }),
-    el("h2", { textContent: s.title })
+    el("h2", { textContent: s.title }),
+    el("p", { className: "meta", textContent: pageText(s.pages) })
   );
-  const v = s.video ? media("video", s.video) : null;
-  if (v) box.append(el("div", { className: "stage" }, [v]));
+  if (s.note) box.append(el("p", { className: "meta", textContent: s.note }));
+  const vids = (s.videos || []).map(v => {
+    const vid = media("video", v.url);
+    box.append(el("p", { className: "meta", textContent: v.label }), el("div", { className: "stage" }, [vid]));
+    return vid;
+  });
   (s.audio || []).forEach(a => box.append(el("p", { className: "meta", textContent: a.label }), media("audio", a.url)));
-  if (!s.lines) return;
+  if (!vids.length && !s.audio && !s.lines) {
+    box.append(el("div", { className: "empty", textContent: "لا توجد وسائط في هذا القسم. راجع الصفحات المذكورة في الكتاب." }));
+  }
+  if (s.lines && vids[0]) dialogue(box, s, vids[0]);
+}
 
+// تظليل سطر الحوار مع الفيديو. إن لم توجد times يُقدَّر توزيع الأسطر على مدة الفيديو.
+function dialogue(box, s, v) {
+  const exact = !!(s.times && s.times.length === s.lines.length);
+  let starts = exact ? s.times.slice() : null;
   const items = s.lines.map((l, i) => {
     const li = el("li", { className: "line", tabIndex: 0 }, [el("b", { textContent: l.who }), el("span", { textContent: l.text })]);
-    const go = () => { mark(i); if (v && l.t != null) { v.currentTime = l.t; v.play(); } };
+    const go = () => { mark(i); if (starts) { v.currentTime = starts[i]; v.play(); } };
     li.onclick = go;
     li.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } };
     return li;
@@ -111,12 +135,37 @@ function renderMain() {
     li.classList.toggle("on", k === i);
     if (k === i) li.scrollIntoView({ block: "nearest" });
   });
-  if (v) v.addEventListener("timeupdate", () => {
+  const estimate = () => {
+    if (exact || !isFinite(v.duration)) return;
+    const w = s.lines.map(l => l.text.length + 8), tot = w.reduce((a, b) => a + b, 0);
+    let acc = 0;
+    starts = w.map(x => { const t = v.duration * (0.03 + 0.94 * acc / tot); acc += x; return t; });
+  };
+  v.addEventListener("loadedmetadata", estimate);
+  estimate();
+  v.addEventListener("timeupdate", () => {
+    if (!starts) return;
     let cur = -1;
-    s.lines.forEach((l, i) => { if (l.t != null && v.currentTime >= l.t) cur = i; });
+    starts.forEach((t, i) => { if (v.currentTime >= t) cur = i; });
     if (cur >= 0) mark(cur);
   });
   box.append(el("ul", { className: "lines" }, items));
+  if (!exact) box.append(el("p", { className: "meta", textContent: "التظليل تقديري حتى تُضبط الأزمنة (أضف ?edit إلى رابط الصفحة)." }));
+
+  if (EDIT) {
+    let idx = 0; const rec = [];
+    const out = el("textarea", { rows: 3, readOnly: true, className: "out" });
+    const btn = el("button", { type: "button", className: "tool", textContent: "سجّل بداية السطر 1 (مفتاح المسافة)" });
+    const press = () => {
+      if (idx >= s.lines.length) return;
+      rec[idx] = +v.currentTime.toFixed(1); mark(idx); idx++;
+      btn.textContent = idx < s.lines.length ? `سجّل بداية السطر ${idx + 1} (مفتاح المسافة)` : "انتهى، انسخ الناتج";
+      out.value = `times: [${rec.join(", ")}]`;
+    };
+    btn.onclick = press;
+    document.onkeydown = e => { if (e.code === "Space" && e.target.tagName !== "TEXTAREA") { e.preventDefault(); press(); } };
+    box.append(el("p", { className: "meta", textContent: "شغّل الفيديو واضغط عند بداية كل سطر، ثم الصق الناتج داخل هذا القسم في data.js." }), btn, out);
+  }
 }
 
 function render() { renderNav(); renderMain(); }
