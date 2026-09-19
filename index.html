@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>كتاب الطالب الأول</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f3f7f4; --card:#fff; --ink:#1a2b27; --muted:#66796f;
+  --green:#1f5f4a; --tint:#dcefe7; --line:#d5e2db; --stage:#12211f;
+  --ui:"IBM Plex Sans Arabic",Tahoma,sans-serif;
+  --text:"Noto Naskh Arabic","Traditional Arabic",serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.7 var(--ui)}
+header{padding:1.25rem 1.5rem;border-bottom:1px solid var(--line);background:var(--card)}
+header h1{margin:0;font-size:1.25rem;font-weight:600}
+.wrap{display:grid;grid-template-columns:19rem minmax(0,1fr);gap:1.5rem;max-width:72rem;margin:1.5rem auto;padding:0 1rem}
+nav,main{background:var(--card);border:1px solid var(--line);border-radius:.75rem;padding:1.25rem}
+nav{align-self:start}
+nav h2{margin:0 0 .75rem;font-size:1rem}
+select{width:100%;padding:.5rem;border:1px solid var(--line);border-radius:.5rem;font:inherit;background:var(--paper);margin-bottom:.75rem}
+nav ol{list-style:none;margin:0;padding:0}
+nav button{all:unset;box-sizing:border-box;display:flex;gap:.6rem;width:100%;padding:.55rem .6rem;border-radius:.5rem;cursor:pointer;line-height:1.5}
+nav button:hover{background:var(--paper)}
+nav button:focus-visible,select:focus-visible,li.line:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+nav button[aria-current="true"]{background:var(--tint);color:var(--green);font-weight:600}
+nav .n{color:var(--muted);min-width:1.2rem}
+main h2{margin:.1rem 0 0;font-size:1.5rem}
+.meta{color:var(--muted);font-size:.9rem;margin:0}
+.stage{margin:1rem 0;border-radius:.75rem;overflow:hidden;background:var(--stage)}
+.stage video{display:block;width:100%;max-height:26rem}
+audio{width:100%;margin:0 0 1rem}
+ul.lines{list-style:none;margin:0;padding:0;font:400 1.35rem/2 var(--text)}
+li.line{display:flex;gap:.75rem;padding:.2rem .75rem;border-radius:.5rem;cursor:pointer;border-inline-start:3px solid transparent}
+li.line b{min-width:3.5rem;font:600 1rem/2.4 var(--ui);color:var(--muted)}
+li.line.on{background:var(--tint);border-inline-start-color:var(--green)}
+li.line.on b{color:var(--green)}
+.empty{padding:2rem 1rem;color:var(--muted);border:1px dashed var(--line);border-radius:.75rem;margin-top:1rem}
+.err{color:#9a3412;font-size:.9rem}
+@media (max-width:52rem){.wrap{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><h1 id="book"></h1></header>
+<div class="wrap">
+  <nav aria-label="صفحات الدرس">
+    <h2>صفحات الدرس</h2>
+    <select id="lessons" aria-label="اختر الدرس"></select>
+    <ol id="sections"></ol>
+  </nav>
+  <main id="main"></main>
+</div>
+<script src="data.js"></script>
+<script>
+const B = window.BOOK;
+const $ = s => document.querySelector(s);
+let L = 0, S = 0;
+
+function el(tag, props = {}, kids = []) {
+  const e = Object.assign(document.createElement(tag), props);
+  kids.forEach(k => e.append(k));
+  return e;
+}
+
+// يشغّل الرابط مباشرة، وإن فشل يجرّب البروتوكول الآخر (http أو https)
+function media(tag, url) {
+  const e = el(tag, { controls: true, preload: "metadata" });
+  if (tag === "video") e.playsInline = true;
+  const alt = url.startsWith("https:") ? url.replace("https:", "http:") : url.replace("http:", "https:");
+  let retried = false;
+  e.src = url;
+  e.addEventListener("error", () => {
+    if (!retried) { retried = true; e.src = alt; }
+  });
+  return e;
+}
+
+function renderNav() {
+  const lesson = B.lessons[L];
+  $("#sections").replaceChildren(...lesson.sections.map((s, i) => {
+    const b = el("button", { type: "button" }, [el("span", { className: "n", textContent: i + 1 }), el("span", { textContent: s.title })]);
+    if (i === S) b.setAttribute("aria-current", "true");
+    b.onclick = () => { S = i; render(); };
+    return el("li", {}, [b]);
+  }));
+}
+
+function renderMain() {
+  const lesson = B.lessons[L], s = lesson.sections[S];
+  const box = $("#main");
+  box.replaceChildren(
+    el("p", { className: "meta", textContent: `${lesson.unit} · ${lesson.title} · ${S + 1} من ${lesson.sections.length}` }),
+    el("h2", { textContent: s.title })
+  );
+  const v = s.video ? media("video", s.video) : null;
+  if (v) box.append(el("div", { className: "stage" }, [v]));
+  (s.audio || []).forEach(a => box.append(el("p", { className: "meta", textContent: a.label }), media("audio", a.url)));
+  if (!s.lines) return;
+
+  const items = s.lines.map((l, i) => {
+    const li = el("li", { className: "line", tabIndex: 0 }, [el("b", { textContent: l.who }), el("span", { textContent: l.text })]);
+    const go = () => { mark(i); if (v && l.t != null) { v.currentTime = l.t; v.play(); } };
+    li.onclick = go;
+    li.onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } };
+    return li;
+  });
+  const mark = i => items.forEach((li, k) => {
+    li.classList.toggle("on", k === i);
+    if (k === i) li.scrollIntoView({ block: "nearest" });
+  });
+  if (v) v.addEventListener("timeupdate", () => {
+    let cur = -1;
+    s.lines.forEach((l, i) => { if (l.t != null && v.currentTime >= l.t) cur = i; });
+    if (cur >= 0) mark(cur);
+  });
+  box.append(el("ul", { className: "lines" }, items));
+}
+
+function render() { renderNav(); renderMain(); }
+
+$("#book").textContent = B.title;
+$("#lessons").replaceChildren(...B.lessons.map((l, i) => el("option", { value: i, textContent: `${l.unit} · ${l.title}` })));
+$("#lessons").onchange = e => { L = +e.target.value; S = 0; render(); };
+render();
+</script>
+</body>
+</html>
